@@ -12,6 +12,6 @@ const {
 
 router.route("/").get(getProducts).post(addProduct);
 router.route("/:id").put(updateProduct).delete(deleteProduct);
-router.route("/state").get(generateReport);
+router.route("/report").get(generateReport);
 
 module.exports = router;
